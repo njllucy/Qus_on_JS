@@ -1,0 +1,77 @@
+//Qus-1. Explain the difference between var, let, and const in terms of scope and hoisting. Provide an example where var behaves differently from let and const.
+
+var x=5;
+var x=10;
+let a=15;
+// let a=20; //error can't re-declare
+a=20;//can update value
+
+const b=25;
+// b=30; //error can't change
+// const b=35; //error can't redeclare and change value
+
+//function scope and block scope
+var age=24;
+if(true){
+    console.log(age);
+    var x=5;
+    let y=10;
+    const z=15;
+}
+console.log(x); //can access from outside of a block that's why it is called function scope
+console.log(y); //error  can't access from outside of a block that's why it is called block scope
+console.log(z); //error can't access from outside of a block that's why it is called block scope
+
+//Hoisting
+console.log(Msg);
+var Msg="Hello";
+console.log(Msg);
+console.log(msg);
+let msg="Hello";
+
+
+// Qus-2.What is a closure in JavaScript? How does lexical scope enable closures? Provide an example of a closure where an inner function retains access to variables from its outer function.
+let a = 10;
+function outer() {
+  let b = 20;
+  function inner() {
+    let c = 30;
+    function in_inner() {
+      let d = 40;
+      function deep_inner() {
+        let e=50;
+        return function deepest_inner(){
+            let f=60;
+         console.log(a++, b++, c++, d++,e++,f++);
+        }
+      }
+      return deep_inner();
+    }
+    return in_inner();
+  }
+  return inner();
+}
+const f = outer();
+f();
+f();
+f();
+
+//Qus-3.What is the difference between map(), filter(), and reduce()
+
+//Qus-4.Explain how JavaScript handles asynchronous operations using Promises and async/await.
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const data = "Hellllooooooooo";
+      resolve(data); 
+      reject("Error"); 
+          }, 2000);
+  });
+}
+fetchData()
+  .then(result => console.log(result))  
+  .catch(error => console.log(error));  
+
+// Qus-5.How does JavaScript handle type coercion when using == vs. ===? Explain with examples where == results in unexpected behavior due to implicit type conversion.
+console.log(4 == '4'); //true
+console.log(4 === '4'); //false
