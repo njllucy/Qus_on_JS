@@ -31,10 +31,10 @@ in var if we want to print a variable that is not declared earlier and after the
 
 in var if we want to print a variable that is not declared earlier and after the printing line we declare it then it will just show an reference error 
 
-**const** : Same as let . Hoisted , but cannot be accessed before declaration.
-2. **What is a closure in JavaScript? How does lexical scope enable closures? Provide an example of a closure where an inner function retains access to variables from its outer function.**
+**const** : Same as let . Hoisted , but cannot be accessed before declaration.<br>
+<b>2. **What is a closure in JavaScript? How does lexical scope enable closures? Provide an example of a closure where an inner function retains access to variables from its outer function.**</b?
 
-### **Answer**
+<b>### **Answer**</b>
 
 **Closure :** Closure is defined as the functions along with it's lexical scope combined together . closures can only  remembers the variables from it’s outer functions scope but not remember it’s own variable and it’s own variable considered to be a local variable.
 
@@ -42,10 +42,10 @@ in var if we want to print a variable that is not declared earlier and after the
 
 **How does lexical scope enable closures :**
 
-A function can access variables from the scope in which it was defined, not where it is called.Lexical scope gives the access of the outers variables and closures keeps those accessible variables alive in the memory.The functions knows it’s parent scopes and closures remembers them.
-3. **What is the difference between map(), filter(), and reduce()?**
+A function can access variables from the scope in which it was defined, not where it is called.Lexical scope gives the access of the outers variables and closures keeps those accessible variables alive in the memory.The functions knows it’s parent scopes and closures remembers them.<br>
+<b>3. **What is the difference between map(), filter(), and reduce()?**</b>
 
-### **Answer**
+<b>### **Answer**</b>
 
 **map() :** A Map is a collection of key-value pairs.Unlike objects, any type of value can be used as a key
 
@@ -61,11 +61,11 @@ map changes each item and returns a new array
 
 filter picks certain items and returns a new array
 
-reduce combine everything and it returns a single value (can be a number, string, object, or even an array), reduces to one value.
+reduce combine everything and it returns a single value (can be a number, string, object, or even an array), reduces to one value.<br>
 
-4. **Explain how JavaScript handles asynchronous operations using Promises and async/await.**
+<b>4. **Explain how JavaScript handles asynchronous operations using Promises and async/await.**</b>
 
-### **Answer**
+<b>### **Answer**</b>
 
 Functions running in parallel with other functions are called asynchronous.
 
@@ -80,8 +80,8 @@ Aysnc lets JavaScript do ****tasks that take time without stopping the rest of t
 
 Async function always returns a Promise.
 Await can only be used inside async functions.
-Await pauses execution of the function until the promise resolves.
-5. **How does JavaScript handle type coercion when using == vs. ===? Explain with examples where == results in unexpected behavior due to implicit type conversion.**
+Await pauses execution of the function until the promise resolves.<br>
+<b>5. **How does JavaScript handle type coercion when using == vs. ===? Explain with examples where == results in unexpected behavior due to implicit type conversion.**</b>
 
 ### **Answer**
 
