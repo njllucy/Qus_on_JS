@@ -1,5 +1,5 @@
 # Qus_on_JS
-<b>1. **Explain the difference between var, let, and const in terms of scope and hoisting. Provide an example where var behaves differently from let and const.**</b><br>
+<b>Qus-1. **Explain the difference between var, let, and const in terms of scope and hoisting. Provide an example where var behaves differently from let and const.**</b><br>
 
 <b>### **Answer**</b><br>
 
@@ -32,7 +32,7 @@ in var if we want to print a variable that is not declared earlier and after the
 in var if we want to print a variable that is not declared earlier and after the printing line we declare it then it will just show an reference error 
 
 **const** : Same as let . Hoisted , but cannot be accessed before declaration.<br>
-<b>2. **What is a closure in JavaScript? How does lexical scope enable closures? Provide an example of a closure where an inner function retains access to variables from its outer function.**</b?
+<b>Qus-2. **What is a closure in JavaScript? How does lexical scope enable closures? Provide an example of a closure where an inner function retains access to variables from its outer function.**</b?
 
 <b>### **Answer**</b>
 
@@ -43,7 +43,7 @@ in var if we want to print a variable that is not declared earlier and after the
 **How does lexical scope enable closures :**
 
 A function can access variables from the scope in which it was defined, not where it is called.Lexical scope gives the access of the outers variables and closures keeps those accessible variables alive in the memory.The functions knows it’s parent scopes and closures remembers them.<br>
-<b>3. **What is the difference between map(), filter(), and reduce()?**</b>
+<b>Qus-3. **What is the difference between map(), filter(), and reduce()?**</b>
 
 <b>### **Answer**</b>
 
@@ -63,7 +63,7 @@ filter picks certain items and returns a new array
 
 reduce combine everything and it returns a single value (can be a number, string, object, or even an array), reduces to one value.<br>
 
-<b>4. **Explain how JavaScript handles asynchronous operations using Promises and async/await.**</b>
+<b>Qus-4. **Explain how JavaScript handles asynchronous operations using Promises and async/await.**</b>
 
 <b>### **Answer**</b>
 
@@ -81,7 +81,7 @@ Aysnc lets JavaScript do ****tasks that take time without stopping the rest of t
 Async function always returns a Promise.
 Await can only be used inside async functions.
 Await pauses execution of the function until the promise resolves.<br>
-<b>5. **How does JavaScript handle type coercion when using == vs. ===? Explain with examples where == results in unexpected behavior due to implicit type conversion.**</b>
+<b>Qus-5. **How does JavaScript handle type coercion when using == vs. ===? Explain with examples where == results in unexpected behavior due to implicit type conversion.**</b>
 
 ### **Answer**
 
