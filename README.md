@@ -1,5 +1,5 @@
 # Qus_on_JS
-<b>Qus-1. **Explain the difference between var, let, and const in terms of scope and hoisting. Provide an example where var behaves differently from let and const.**</b><br>
+<b color=red>Qus-1. **Explain the difference between var, let, and const in terms of scope and hoisting. Provide an example where var behaves differently from let and const.**</b><br>
 
 <b>### **Answer**</b><br>
 
